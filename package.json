@@ -2,9 +2,10 @@
   "name": "api-c214-lab",
   "version": "1.0.0",
   "description": "Aplicação dos conceitos vistos em aula",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --detectOpenHandles --testEnvironment=node --runInBand --coverage --forceExit",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

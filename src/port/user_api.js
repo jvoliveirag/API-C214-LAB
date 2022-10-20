@@ -19,7 +19,7 @@ module.exports = (app) => {
         res.status(Utils.responseStatus(response.name));
         res.json(response);
     });
-    app.patch(`${route}/listUser`, async (req, res) => {
+    app.patch(`${route}/listCarro`, async (req, res) => {
         const response = await User.listByPlaca(req.body);
         res.status(Utils.responseStatus(response.name));
         res.json(response);
